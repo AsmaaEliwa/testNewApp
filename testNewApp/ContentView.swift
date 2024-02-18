@@ -52,7 +52,7 @@ struct ContentView: View {
         filter.setValue(image, forKey: kCIInputImageKey)
         // Set filter parameters (e.g., brightness, contrast, saturation)
         filter.setValue(0.0, forKey: kCIInputBrightnessKey)
-        filter.setValue(1.0, forKey: kCIInputContrastKey)
+        filter.setValue(0.80, forKey: kCIInputContrastKey)
         filter.setValue(1.0, forKey: kCIInputSaturationKey)
 
         return filter.outputImage!
