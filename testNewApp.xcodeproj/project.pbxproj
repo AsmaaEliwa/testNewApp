@@ -13,6 +13,7 @@
 		7F9D663A2B7F6363004F31B8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F9D66392B7F6363004F31B8 /* Preview Assets.xcassets */; };
 		7F9D66412B824BE0004F31B8 /* threadSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9D66402B824BE0004F31B8 /* threadSwiftUIView.swift */; };
 		7F9D66432B824E45004F31B8 /* dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9D66422B824E45004F31B8 /* dispatch.swift */; };
+		7F9D66452B837FE6004F31B8 /* jsonSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9D66442B837FE6004F31B8 /* jsonSerialization.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		7F9D66392B7F6363004F31B8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7F9D66402B824BE0004F31B8 /* threadSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = threadSwiftUIView.swift; sourceTree = "<group>"; };
 		7F9D66422B824E45004F31B8 /* dispatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dispatch.swift; sourceTree = "<group>"; };
+		7F9D66442B837FE6004F31B8 /* jsonSerialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jsonSerialization.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				7F9D66382B7F6363004F31B8 /* Preview Content */,
 				7F9D66402B824BE0004F31B8 /* threadSwiftUIView.swift */,
 				7F9D66422B824E45004F31B8 /* dispatch.swift */,
+				7F9D66442B837FE6004F31B8 /* jsonSerialization.swift */,
 			);
 			path = testNewApp;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F9D66352B7F635E004F31B8 /* ContentView.swift in Sources */,
+				7F9D66452B837FE6004F31B8 /* jsonSerialization.swift in Sources */,
 				7F9D66432B824E45004F31B8 /* dispatch.swift in Sources */,
 				7F9D66412B824BE0004F31B8 /* threadSwiftUIView.swift in Sources */,
 				7F9D66332B7F635E004F31B8 /* testNewAppApp.swift in Sources */,

@@ -25,7 +25,10 @@ struct threadSwiftUIView: View {
             self.startgroupTask()
             Task{
                 await mydispatch.useActor()
+                
             }
+            encode()
+            decode()
         }
     }
     
