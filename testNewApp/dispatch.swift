@@ -45,8 +45,21 @@ class dispatch{
     }
     
     
+    actor myActor{
+       private  var count:Int = 0
+        func increase(){
+            count+=1
+        }
+        func getCount()->Int{
+            return count
+        }
+    }
     
-    
-    
+    func useActor()async{
+        let actor = myActor()
+       await actor.increase()
+        let value = await actor.getCount()
+        print("my count is \(value)")
+    }
     
 }

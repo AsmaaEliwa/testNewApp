@@ -23,6 +23,9 @@ struct threadSwiftUIView: View {
             mydispatch.addTask()
             mydispatch.createSerialConcurrentQueue()
             self.startgroupTask()
+            Task{
+                await mydispatch.useActor()
+            }
         }
     }
     
@@ -41,18 +44,18 @@ struct threadSwiftUIView: View {
     
     func startgroupTask() {
         Task{
-           await Task.withGroup(resultType: Void.self ) {group in
+           await withTaskGroup(of: Void.self ) {group in
                for i in 1...3{
                    group.addTask {
                      await myTask(i: i)
                    }
                }
-               do {
-               try
+//               do {
+//               try
                    await group.waitForAll()
-               }catch{
-                   print(error)
-               }
+//               }catch{
+//                   print(error)
+//               }
             }
             
             
@@ -65,6 +68,29 @@ struct threadSwiftUIView: View {
         print(i)   //  2 1 3 will by concurrently executed
     }
     
+    
+    func startDispatchGroup(){
+        let myDispatchGroup = DispatchGroup()
+        myDispatchGroup.enter()
+        performBackgroundTask1(completion: {
+            myDispatchGroup.leave()
+               })
+        // Notify when all tasks in the group have completed
+        myDispatchGroup.notify(queue: .main) {
+                   self.message = "All background tasks completed!"
+               }
+    }
+    
+    
+    
+    func performBackgroundTask1(completion: @escaping () -> Void) {
+         DispatchQueue.global().async {
+             // Simulate a long-running task
+             Thread.sleep(forTimeInterval: 3)
+             print("Background task 1 completed")
+             completion()
+         }
+     }
     
 }
 
