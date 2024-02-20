@@ -14,6 +14,7 @@
 		7F9D66412B824BE0004F31B8 /* threadSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9D66402B824BE0004F31B8 /* threadSwiftUIView.swift */; };
 		7F9D66432B824E45004F31B8 /* dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9D66422B824E45004F31B8 /* dispatch.swift */; };
 		7F9D66452B837FE6004F31B8 /* jsonSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9D66442B837FE6004F31B8 /* jsonSerialization.swift */; };
+		7FBEBD642B84CF75005B827C /* MotionManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBEBD632B84CF75005B827C /* MotionManger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		7F9D66402B824BE0004F31B8 /* threadSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = threadSwiftUIView.swift; sourceTree = "<group>"; };
 		7F9D66422B824E45004F31B8 /* dispatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dispatch.swift; sourceTree = "<group>"; };
 		7F9D66442B837FE6004F31B8 /* jsonSerialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jsonSerialization.swift; sourceTree = "<group>"; };
+		7FBEBD632B84CF75005B827C /* MotionManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				7F9D66402B824BE0004F31B8 /* threadSwiftUIView.swift */,
 				7F9D66422B824E45004F31B8 /* dispatch.swift */,
 				7F9D66442B837FE6004F31B8 /* jsonSerialization.swift */,
+				7FBEBD632B84CF75005B827C /* MotionManger.swift */,
 			);
 			path = testNewApp;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 				7F9D66432B824E45004F31B8 /* dispatch.swift in Sources */,
 				7F9D66412B824BE0004F31B8 /* threadSwiftUIView.swift in Sources */,
 				7F9D66332B7F635E004F31B8 /* testNewAppApp.swift in Sources */,
+				7FBEBD642B84CF75005B827C /* MotionManger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
