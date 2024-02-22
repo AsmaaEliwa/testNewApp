@@ -15,6 +15,7 @@ class MotionManger{
         
     }
     func config(){
+        
         if motionManger.isAccelerometerAvailable {
             motionManger.accelerometerUpdateInterval = 0.1 // Update interval in seconds
             motionManger.startAccelerometerUpdates(to: .main) { (data, error) in
