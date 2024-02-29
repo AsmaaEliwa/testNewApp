@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import PMAlertController
+//import PMAlertController
 //struct SwiftUIView: View {
 //    func createAlert(){
 //        let customAlert = PMAlertController(title: "my custom alert!", description: "custom alert", image: UIImage(named: "icon"), style: .alert)
@@ -31,27 +31,27 @@ import PMAlertController
 //    SwiftUIView()
 //}
 import SwiftUI
-
-struct CustomAlertView: View {
-    var body: some View {
-        VStack {
-            Text("my custom alert!")
-            Text("custom alert")
-            Button("OK", action: {
-                // Handle OK button action
-            })
-            .buttonStyle(DefaultButtonStyle())
-            Button("WOW", action: {
-                // Handle WOW button action
-            })
-            .buttonStyle(DefaultButtonStyle())
-        }
-        .padding()
-        .background(Color.white)
-        .cornerRadius(10)
-        .shadow(radius: 5)
-    }
-}
+//
+//struct CustomAlertView: View {
+//    var body: some View {
+//        VStack {
+//            Text("my custom alert!")
+//            Text("custom alert")
+//            Button("OK", action: {
+//                // Handle OK button action
+//            })
+//            .buttonStyle(DefaultButtonStyle())
+//            Button("WOW", action: {
+//                // Handle WOW button action
+//            })
+//            .buttonStyle(DefaultButtonStyle())
+//        }
+//        .padding()
+//        .background(Color.white)
+//        .cornerRadius(10)
+//        .shadow(radius: 5)
+//    }
+//}
 
 struct SwiftUIView: View {
     @State private var showAlert = false

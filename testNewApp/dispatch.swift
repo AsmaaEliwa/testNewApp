@@ -33,7 +33,7 @@ class dispatch{
         serialQueue.async {
             print("\(serialQueue.label) was exicuted")
         }
-      // we can also pass a block object to the serial queue
+        // we can also pass a block object to the serial queue
         serialQueue.async(execute: task)
         
         //defining a concurrent queue
@@ -46,7 +46,7 @@ class dispatch{
     
     
     actor myActor{
-       private  var count:Int = 0
+        private  var count:Int = 0
         func increase(){
             count+=1
         }
@@ -57,9 +57,25 @@ class dispatch{
     
     func useActor()async{
         let actor = myActor()
-       await actor.increase()
+        await actor.increase()
         let value = await actor.getCount()
         print("my count is \(value)")
     }
     
+    let workItem = DispatchWorkItem {
+        print("Executing work item")
+    }
+    func addDispatchItem(){
+        // Execute the work item asynchronously on a global dispatch queue
+        DispatchQueue.global().async(execute: workItem)
+        
+        // Alternatively, you can execute the work item directly
+        // workItem.perform()
+        
+        // Optionally, you can specify a completion handler
+        workItem.notify(queue: DispatchQueue.main) {
+            print("Work item completed")
+        }
+        
+    }
 }
