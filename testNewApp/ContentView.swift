@@ -6,7 +6,6 @@
 //
 import SwiftUI
 import CoreImage
-
 struct ContentView: View {
     // Define CIContext and CIImage properties
     let context = CIContext()
