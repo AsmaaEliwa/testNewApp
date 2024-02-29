@@ -18,6 +18,7 @@
 		7FBEBD642B84CF75005B827C /* MotionManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBEBD632B84CF75005B827C /* MotionManger.swift */; };
 		7FBEBD662B875184005B827C /* Pinning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBEBD652B875184005B827C /* Pinning.swift */; };
 		7FBEBD682B90851B005B827C /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBEBD672B90851B005B827C /* SwiftUIView.swift */; };
+		7FBEBD6A2B90AAA4005B827C /* NsCachManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBEBD692B90AAA4005B827C /* NsCachManger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		7FBEBD632B84CF75005B827C /* MotionManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManger.swift; sourceTree = "<group>"; };
 		7FBEBD652B875184005B827C /* Pinning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pinning.swift; sourceTree = "<group>"; };
 		7FBEBD672B90851B005B827C /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		7FBEBD692B90AAA4005B827C /* NsCachManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NsCachManger.swift; sourceTree = "<group>"; };
 		B756044BFB7247D34116DAA0 /* Pods_testNewApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testNewApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C64498FFB8232CF4757ECBC5 /* Pods-testNewApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testNewApp.release.xcconfig"; path = "Target Support Files/Pods-testNewApp/Pods-testNewApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +82,7 @@
 				7F9D66442B837FE6004F31B8 /* jsonSerialization.swift */,
 				7FBEBD632B84CF75005B827C /* MotionManger.swift */,
 				7FBEBD652B875184005B827C /* Pinning.swift */,
+				7FBEBD692B90AAA4005B827C /* NsCachManger.swift */,
 			);
 			path = testNewApp;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 				7F9D66332B7F635E004F31B8 /* testNewAppApp.swift in Sources */,
 				7FBEBD642B84CF75005B827C /* MotionManger.swift in Sources */,
 				7FBEBD662B875184005B827C /* Pinning.swift in Sources */,
+				7FBEBD6A2B90AAA4005B827C /* NsCachManger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
